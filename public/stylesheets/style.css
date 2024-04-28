@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: #6a757e;
+}
+
+.container {
+  margin: 0;
+}
+
+.navbar-brand {
+  margin: auto 0;
+  padding: 15px;
+  color: #f8f8f8;
+}
+
+.content {
+  margin: 0;
+  padding: 50px;
+  background-color: #323940;
+  height: 100%;
+}
+
+.form-dialog {
+  margin: 30px auto 0 auto;
+  width: 75%;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.card-footer {
+  text-align: end;
+}
