@@ -4,8 +4,6 @@ This is a useful tool to generate customized random password within few steps.
 You can decide the length of the password, the types of elements to include (e.g., lowercase characters, uppercase characters, numbers), and the specific elements to be excluded.
 
 To enhance user experience, the project utilizes AJAX to avoid redirecting the website each time a submission is made.  
-
-The project could be enhanced by adding an alert for an empty password length field and by ensuring that the password length adheres to the specified range of 4-16 characters.
 ## Screen
 ![startPage](https://i.imgur.com/YD2I7PJ.png)
 ![generatedPassword](https://i.imgur.com/tS2wUYJ.png)
