@@ -16,7 +16,7 @@ node.js v18.15.0
 ## Installation
 1. Git clone the project to local
   ```
-  git clone https://github.com/Yujie-liang/shortenUrl.git
+  git clone https://github.com/Yujie-liang/passwordGenerator.git
   ```
 2. Install packages in the local project folder
   ```
