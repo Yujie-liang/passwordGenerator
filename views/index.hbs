@@ -2,18 +2,20 @@
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Random Password Generator <i class="fa-solid fa-key"></i></h5>
-      <form class="form-dialog">
+      <!--form-->
+      <form class="form-dialog" action="/" method="POST">
         <div class="row align-items-center mb-3">
           <label for="password-length" class="col-sm-5 col-form-label">Password Length</label>
           <div class="col-sm-7">
-            <input type="number" class="form-control" id="password-length" aria-describedby="password-length">
+            <input type="number" class="form-control" id="password-length" name="passwordLength"
+              aria-describedby="password-length">
             <div id="password-length" class="form-text">Length is available between 4 ~ 16</div>
           </div>
         </div>
         <div class="row align-items-center mb-3">
           <label class="col-sm-5 col-form-label" for="lower-chars">Include Lowercase Characters</label>
           <div class="col-sm-7">
-            <input type="checkbox" class="form-check-input" id="lower-chars">
+            <input type="checkbox" class="form-check-input" id="lower-chars" name="lowerChars">
             <label class="form-check-example" for="lower-chars">(e.g. abcdefg)
             </label>
           </div>
@@ -21,7 +23,7 @@
         <div class="row align-items-center mb-3">
           <label class="col-sm-5 col-form-label" for="upper-chars">Include Uppercase Characters</label>
           <div class="col-sm-7">
-            <input type="checkbox" class="form-check-input" id="upper-chars">
+            <input type="checkbox" class="form-check-input" id="upper-chars" name="upperChars">
             <label class="form-check-example" for="upper-chars">(e.g. ABCDEFG)
             </label>
           </div>
@@ -29,7 +31,7 @@
         <div class="row align-items-center mb-3">
           <label class="col-sm-5 col-form-label" for="numbers">Include Numbers</label>
           <div class="col-sm-7">
-            <input type="checkbox" class="form-check-input" id="numbers">
+            <input type="checkbox" class="form-check-input" id="numbers" name="numbers">
             <label class="form-check-example" for="numbers">(e.g. 123456)
             </label>
           </div>
@@ -37,7 +39,7 @@
         <div class="row align-items-center mb-3">
           <label class="col-sm-5 col-form-label" for="symbols">Include Symbols</label>
           <div class="col-sm-7">
-            <input type="checkbox" class="form-check-input" id="symbols">
+            <input type="checkbox" class="form-check-input" id="symbols" name="symbols">
             <label class="form-check-example" for="symbols">(e.g. @#$%)
             </label>
           </div>
@@ -45,14 +47,17 @@
         <div class="row align-items-center mb-3">
           <label for="exclude-cahracters" class="col-sm-5 col-form-label">Exclude Characters</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" id="exclude-cahracters" aria-describedby="exclude-cahracters">
+            <input type="text" class="form-control" id="exclude-cahracters" name="exChars"
+              aria-describedby="exclude-cahracters">
             <div id="exclude-cahracters" class="form-text">These characters will not appear in the password</div>
           </div>
         </div>
+        <div id="notification">
+
+        </div>
         <button type="submit" class="btn btn-success">Generate Password</button>
       </form>
-      <div class="result">
-      </div>
+
     </div>
     <div class="card-footer text-muted">
       Idea is inspired by Strong Random Password

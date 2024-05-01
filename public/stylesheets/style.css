@@ -28,6 +28,11 @@ body {
   height: 100%;
 }
 
+.card {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .form-dialog {
   margin: 30px auto 0 auto;
   width: 75%;
@@ -35,6 +40,22 @@ body {
   border: 1px solid white;
   border-radius: 2px;
   background-color: white;
+}
+
+#notification {
+  background-color: #cbedf2;
+  border-radius: 5px;
+}
+
+#description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: #31818c;
+}
+
+#result {
+  color: #f4429e;
 }
 
 .card-footer {
